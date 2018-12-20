@@ -114,8 +114,8 @@ table {
     background: black;
 }  
 .cotes{
-      color: #86D73F;
-  border: 4px solid #86D73F;
+    color: #86D73F;
+    border: 4px solid #86D73F;
     height: 120px;
     width: 120px;
     border-radius: 50%; 
@@ -127,11 +127,11 @@ table {
     position: relative;
 }
 .imgss{
-right: 0px;
-bottom: 10px;
-background: #86D73F;
-border-radius: 50%;
-position: absolute;
+    right: 0px;
+    bottom: 10px;
+    background: #86D73F;
+    border-radius: 50%;
+    position: absolute;
 }
 .listrecord{
     text-align: center;
