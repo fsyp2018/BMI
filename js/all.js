@@ -1,6 +1,7 @@
 var btn = document.querySelector('.rbut');
 var now = new Date();
 var totalresult = JSON.parse(localStorage.getItem('BMIlist')) || [];
+var list = document.querySelector('.listrecord');
 
 function saveBMI() {
 	//取得身高體重數值
@@ -35,12 +36,12 @@ function saveBMI() {
 	}
 	//取得現在時間
 	var nowtime = now.getFullYear() + '年' + (now.getMonth() + 1) + '月' + now.getDate() + '日' + now.getHours() + '時' + now.getMinutes() + '分' + now.getSeconds() + '秒';
-	console.log(obesity);
-	console.log(grade);
-	console.log(nowtime);
-	localStorage.setItem('height', heightrs);
-	localStorage.setItem('weight', weightrs);
-	localStorage.setItem('hwresult', hwresult);
+	// console.log(obesity);
+	// console.log(grade);
+	// console.log(nowtime);
+	// localStorage.setItem('height', heightrs);
+	// localStorage.setItem('weight', weightrs);
+	// localStorage.setItem('hwresult', hwresult);
 	//將取得的數值存進陣列
 	var todo = {
 		height: heightrs,
@@ -54,10 +55,21 @@ function saveBMI() {
 	//將陣列以JSON方式輸入至localstorage
 	totalresult.push(todo);
 	localStorage.setItem('BMIlist', JSON.stringify(totalresult));
+	updatelist(totalresult);
 }
 
-function updatelist(){
 
+function updatelist(totalresult) {
+	var str = '';
+	var len = totalresult.length;
+	for (i = len-1; i >= 0; i--) {
+		str += '<div class="boxcolor" id=' + totalresult[i].grade + '></div><li><table><tr><td>' + totalresult[i].obesity + '</td><td><span>BMI</span>' + totalresult[i].BMI + '</td><td><span>weight</span>' + totalresult[i].weight + 'KG</td><td><span>height</span>' + totalresult[i].height + 'cm</td><td><span>' + totalresult[i].nowtime + '</span></td></tr></table></li>';
+	}
+	list.innerHTML = str;
 }
+
 //監聽看結果按鈕
 btn.addEventListener('click', saveBMI);
+
+//第一次執行
+updatelist(totalresult);

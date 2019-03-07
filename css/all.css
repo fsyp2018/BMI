@@ -49,6 +49,7 @@ table {
 .wrap{
     width: 1024px;
     margin:0px auto;
+    background: #bebebe;
 }
 .calculation{
     background: #424242;
@@ -77,7 +78,8 @@ table {
     border: 2px solid #FFD366;
     border-radius: 10px;    
     font-size: 24px;
-    color: rgba(255,255,255,0.50);
+    color: rgba(255,255,255,0.50);    
+    outline: 0px; 
 }
 .weight{    
     background: #424242;
@@ -85,21 +87,31 @@ table {
     border-radius: 10px;
     font-size: 24px;
     color: rgba(255,255,255,0.50);
+    outline: 0px; 
 }
 .resultbut{
     float: left;
     margin-top: 92px;
-    margin-left: 60px;
-     
+    margin-left: 60px;     
 }
 .rbut{    
     font-size: 24px;    
     width: 120px;
     height: 120px;
     border-radius: 50%;
-       
+    background:#FFD366;
+    border: none;
+    outline: 0px; 
+}
+.rbut:hover{
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64) ;
+}
+.rbut:active{
+    background: #DEA821;
+    box-shadow: none;
 }
 .footer{
+    margin-top: 20px;
     position: relative;
     height: 90px;
     background: #FFD366;
@@ -133,8 +145,54 @@ table {
     border-radius: 50%;
     position: absolute;
 }
-.listrecord{
+.clearfix{
+    clear: both;
+}
+.history{
+    margin-top: 20px;
     text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    font-size: 26px;
+}
+.listrecord{    
+    width: 840px;
+    margin: 0 auto;        
+}
+.listrecord li{    
+    margin-top: 15px;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    font-size: 30px;
+    box-shadow:0 1px 5px rgba(0, 0, 0, 0.5); 
+}
+.listrecord td{
+    width: 145px;
+    padding-left: 20px;    
+}
+.listrecord span{
+    font-size: 12px;
+    line-height: 30px;        
+}
+.boxcolor{       
+    float: left;
+    width: 7px;
+    height: 76px;  
+}
+#lev1{
+    background-color: #31BAF9;
+}
+#lev2{
+    background-color: #86D73F;
+}
+#lev3{
+    background-color: #FF982D;
+}
+#lev4{
+    background-color: #FF6C03;
+}
+#lev5{
+    background-color: #FF6C03;
+}
+#lev6{
+    background-color: #FF1200 ;
 }
