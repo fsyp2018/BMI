@@ -35,7 +35,7 @@ function saveBMI() {
 		var grade = 'lev1';
 	}
 	//取得現在時間
-	var nowtime = now.getFullYear() + '年' + (now.getMonth() + 1) + '月' + now.getDate() + '日' + now.getHours() + '時' + now.getMinutes() + '分' + now.getSeconds() + '秒';
+	var nowtime = now.getFullYear() + '年' + (now.getMonth() + 1) + '月' + now.getDate() + '日' + now.getHours() + '時' + now.getMinutes() + '分';
 	// console.log(obesity);
 	// console.log(grade);
 	// console.log(nowtime);
