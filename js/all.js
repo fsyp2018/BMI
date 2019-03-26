@@ -128,5 +128,5 @@ function re(e) {
 function deleteList() {
 	localStorage.removeItem('BMIlist');
 	totalresult =[];
-	updateList(totalresult);
+	re();
 }
