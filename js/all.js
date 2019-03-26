@@ -127,6 +127,6 @@ function re(e) {
 //清除localStorage資料
 function deleteList() {
 	localStorage.removeItem('BMIlist');
-	
+	totalresult =[];
 	updateList(totalresult);
 }
