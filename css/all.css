@@ -202,4 +202,5 @@ table {
     margin: 0 auto;
     color: rgb(192, 41, 159);
     cursor: pointer;
+	text-align: center;
 }
