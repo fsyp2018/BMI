@@ -203,3 +203,7 @@ table {
     color: rgb(192, 41, 159);
     cursor: pointer;	
 }
+
+.clearlist:hover{
+    text-decoration: underline;
+}
