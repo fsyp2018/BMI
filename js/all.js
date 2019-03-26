@@ -8,7 +8,7 @@ var imgss = document.querySelector('.imgss');
 var refresh = document.querySelector('.refresh');
 var BMI = 0;
 var obesity = '';
-var deleteList = document.querySelector('.deleteList');
+var deleteList = document.querySelector('.clearlist');
 
 //監聽
 btn.addEventListener('click', saveBMI);
