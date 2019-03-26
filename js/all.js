@@ -125,7 +125,7 @@ function re(e) {
 }
 
 //清除localStorage資料
-function deleteList() {
+function deleteList(e) {
 	localStorage.removeItem('BMIlist');
 	totalresult =[];
 	updateList(totalresult);
