@@ -197,10 +197,9 @@ table {
     background-color: #FF1200 ;
 }
 
-.deleteList{
+.clearlist{
     font-size: 18px;
     margin: 0 auto;
     color: rgb(192, 41, 159);
-    cursor: pointer;
-	text-align: center;
+    cursor: pointer;	
 }
