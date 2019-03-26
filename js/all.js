@@ -8,12 +8,12 @@ var imgss = document.querySelector('.imgss');
 var refresh = document.querySelector('.refresh');
 var BMI = 0;
 var obesity = '';
-var deleteList = document.querySelector('.clearlist');
+var clearlist = document.querySelector('.clearlist');
 
 //監聽
 btn.addEventListener('click', saveBMI);
 imgss.addEventListener('click', re);
-deleteList.addEventListener('click', deleteList);
+clearlist.addEventListener('click', deleteList);
 //第一次開瀏覽器取得舊資料
 updatelist(totalresult);
 
