@@ -47,322 +47,163 @@ table {
 	border-spacing: 0;
 }
 .wrap{
-    max-width: 1024px;
-    margin: 0 auto;
-    background: rgb(245, 224, 224);    
+    width: 1024px;
+    margin:0px auto;
+    background: #bebebe;
 }
-.header{
-    background-image: url('../img/header_desktop.png');
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-    max-width: 1024px;
-    height: 420px;
-    margin-bottom: 50px;       
+.calculation{
+    background: #424242;
+    height: 300px;
 }
-@media (max-width: 767px){
-	.header{		
-		background-size: auto;
-		background-position: center;		
-	}
+.img{
+    float: left;
+    margin-top: 92px;
+    margin-left: 173px;
 }
-.top{
-    height: 56px;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-between;
-    align-items: center; 
-    background: rgba(0,0,0,0.75);     
+.img img{
+    width: 117px;
+    height: 117px;
 }
-.logo{    
-    margin-left: 42px;    
-    font-size: 24px;
-    color: #FFFFFF;
-    font-weight:900;
-}
-.menu-pc{
-    margin-right: 48px;
-}
-.menu-pc a{
-    margin-right: 30px;
-    text-decoration:none;    
-    font-size: 16px;
-    color: #FFFFFF;
-    padding-bottom: 15px;
-}
-.menu-pc a:hover{
-    border-bottom: 3px solid #efe9e7;    
-}
-.slogan{
-    margin: 67px auto 0px auto;
-    background: rgba(0,0,0,0.35);
-    max-width: 460px;
-    height: 152px;          
-    text-align: center;
-    padding-top: 20px;  
-}
-.slogan h1{  
-    font-size: 36px;
-    color: #FFFFFF;
-    padding-bottom: 16px;    
-}
-.slogan h2{        
-    font-size: 16px;
-    color: #FFFFFF;
-    line-height: 24px;    
-}
-@media (max-width: 767px){
-	.slogan{		
-		margin: 67px auto 0px auto;
-	}
-}
-.content{
-    text-align: center;
-}
-.question{
-	margin: 50px auto 31px auto;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	align-items: center;
-}
-.question h2{    
-    font-size: 20px;
-    color: #3D1101;
-    line-height: 32px;
-}
-.question::before,.question::after{
-	flex-grow: 1;
-	max-width: 100px;
-	content: "";
-	border-top: 1px solid #3d1101;
-}
-.food ul{
-    margin:0 62px 50px 62px;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content:space-around; 
-    color: #3D1101;
-}
-.food li{
-    width: 260px;
-}
-.food img{
-    border-radius: 180px;
-    max-width: 100%;
-}
-.food h3{
-    margin:20px auto 11px auto;
+.entervalue{
+    width: 250px;
+    float: left;
+    margin-top: 80px;
+    margin-left: 97px;    
     font-size: 18px;
-    
+    color: #FFD366;
+    line-height: 30px;    
 }
-.food p{    
-    font-size: 16px;    
-    text-align: left;
+.height{    
+    background: #424242;
+    border: 2px solid #FFD366;
+    border-radius: 10px;    
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);    
+    outline: 0px; 
 }
-@media (max-width: 905px){
-    .food li{
-        max-width: 200px;
-        margin-top:30px;  
-     }
+.weight{    
+    background: #424242;
+    border: 2px solid #FFD366;
+    border-radius: 10px;
+    font-size: 24px;
+    color: rgba(255,255,255,0.50);
+    outline: 0px; 
 }
-.chef{
-    background: #3D1101;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:space-around;
-    
+.resultbut{
+    float: left;
+    margin-top: 92px;
+    margin-left: 60px;     
 }
-.chefphoto{
-    margin-left: 42px;  
-    background-image: url(../img/main_chef_brown.png);    
-    width: 470px;      
-    height: 460px;
-    background-size: cover;
-    background-repeat: no-repeat;
+.rbut{    
+    font-size: 24px;    
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background:#FFD366;
+    border: none;
+    outline: 0px; 
 }
-.chefphoto img{
-    max-width: 100%;
+.rbut:hover{
+    box-shadow: 0 1px 6px 3px rgba(255,196,50,0.64) ;
 }
-.chefq{
-    max-width: 410px;
-    text-align: left;
-    color: #EFE9E7;
-    margin:81px auto 80px auto;
+.rbut:active{
+    background: #DEA821;
+    box-shadow: none;
 }
-.chefq h3{
-    font-size: 20px;
-    line-height: 32px;
-    margin-bottom: 16px;   
+.footer{
+    margin-top: 20px;
+    position: relative;
+    height: 90px;
+    background: #FFD366;
 }
-.chefq p{
-    font-size: 16px;       
+.footer img{
+    display: block;
+    position: absolute;
+    top:18px;
+    left:485px;
+    height: 50px;
+    width: 50px;
+    background: black;
+}  
+.cotes{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%; 
+    font-size: 18px;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 25px;
+    padding: 20px;
+    position: relative;
 }
-@media (max-width:1025px){
-    .chefphoto{
-        margin-left: 10px;              
+.imgss{
+    top:-30px;
+	left:90px;
+    border-radius: 50%;
+    position: relative;
+}
+.imgss:hover{
+	transform:scale(1.2,1.2);
+}
+.clearfix{
+    clear: both;
+}
+.history{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 26px;
+}
+.listrecord{    
+    width: 80%;
+    margin: 0 auto;        
+}
+.listrecord li{    
+    margin-top: 15px;
+    padding: 20px 0;
+    margin-bottom: 15px;
+    background: #FFFFFF;
+    font-size: 30px;
+    box-shadow:0 1px 5px rgba(0, 0, 0, 0.5); 
+}
+.listrecord td{
+    width: 145px;
+    padding-left: 20px;    
+}
+.listrecord span{
+    font-size: 12px;
+    line-height: 30px;        
+}
+.boxcolor{       
+    float: left;
+    width: 7px;
+    height: 76px;  
+}
+#lev1{
+    background-color: #31BAF9;
+}
+#lev2{
+    background-color: #86D73F;
+}
+#lev3{
+    background-color: #FF982D;
+}
+#lev4{
+    background-color: #FF6C03;
+}
+#lev5{
+    background-color: #FF6C03;
+}
+#lev6{
+    background-color: #FF1200 ;
+}
 
-               
-    }
-    .chefq{
-             
-        
-    }
+.clearlist{
+    font-size: 18px;
+    margin: 0 auto;
+    color: rgb(192, 41, 159);
+    cursor: pointer;	
 }
-.openassess{
-    color: #3D1101;
-    background: rgba(250, 250, 250, 0.377);
-}
-.assesstitle{
-    text-align: center;
-    font-size: 24px;
-    margin:0px auto 32px auto;
-    padding-top: 50px;
-}
-.assess ul{
-    display: flex;
-    
-	justify-content: space-between;
-	padding: 0 42px;
-}
-.assess li{
-    max-width: 32%;
-    display: flex;    
-    flex-wrap:wrap;
-    align-items: flex-start;
-}
-.assess img{    
-    border-radius: 67px;   
-    margin-right: 13px;
-}
-.assess div{
-    text-align: left;   
-   
-}
-.assess h2{    
-    line-height: 67px;
-}
-.assess p{    
-    line-height: 24px;
-}
-.assess span{    
-    line-height: 36px;
-    display: flex;    
-    justify-content: flex-end; 
-}
-.openmap{
-    color: #3D1101;
-    margin-bottom: 50px;
-}
-.maptitle{
-    font-size: 24px;
-    margin:50px auto 38px auto;
-    line-height: 1.5;
-}
-.mapbooking{
-	width: 100%;
-	display: flex;	
-	justify-content: center;	
-	overflow: hidden;    
-}
-.map{    
-      background-image: url(../img/Map.png);
-      background-size:cover;
-      background-repeat: no-repeat;
-      background-position: top left;
-      width: 100%; 
-      margin-left: 42px;     
-}
-.booking{ 
-    margin-left: 20px;
-    text-align: left;
-    font-size: 14px;
-    line-height: 1.5;
-    width: 100%;
-    margin-right: 42px;
-}
-.booking form{
-    width: 100%;;    
-}
-.booking input{
-    width: 100%;
-    margin-bottom: 6px;    
-	height:32px;
-	border: 1px solid #cccccc;
-	border-radius: 3px;
-	padding: 0 14px;
-}
-.booking .radio{
-    max-width: 14px;
-    max-height: 14px;    	
-}
-.buttonstyle{
-    display:flex;
-    justify-content:flex-end;
-    margin-top: 60px;
-    width: 100%;
-}
-.booking .button{    	
-	margin-left: 11px;    
-    max-width: 70px;
-    color: #ffffff;
-    background-color: rgba(0, 0, 0, 0.35);
-    text-align: center;
-}
-.booking .button:hover{
-    background-color: #f56c32;
-}
-.footer{    
-    background: rgba(250, 250, 250, 0.377);
-    padding-top: 50px;
-    padding-bottom: 50px;
-}
-.end{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
-    margin:0px 11px 16px 11px;
-}
-.about{
-    max-width: 299px;
-}
-.about h2{
-    font-size: 24px;
-    color: #3D1101;
-    
-}
-.about p{
-    font-size: 16px;
-    color: #3D1101;
-}
-.connection{
-    max-width: 299px;
-}
-.connection h2{
-    font-size: 24px;
-    color: #3D1101;
-    
-}
-.connection p{
-    font-size: 16px;
-    color: #3D1101;
-}
-.footerlogo{
-    max-width: 245px;
-    margin-right: 42px;
-    display:flex;
-    flex-wrap: wrap;
-    justify-content:flex-end;
-}
-.footerlogo h1{
-    font-size: 49px;
-    color: #3D1101;
-    letter-spacing: -1px;
-    font-weight:bold;
-    margin-bottom: 22px;
-}
-.footerlogo img{    
-    width: 31px;
-    height: 36px;
-    margin-left: 12px;    
+
+.clearlist:hover{
+    text-decoration: underline;
 }
